@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		body {
+			font-family: 'Helvetica Neue', Helvetica, Verdana, sans-serif;
+			text-align: center;
+		}
+
+		label {
+			color: #3296ff;
+    		display: block;
+    		font-size: 12px;
+    		font-weight: bold;
+    		margin-bottom: 3px;
+    		width: auto;
+		}
+
+		input[type="text"] {
+			width: 90%;
+			margin-bottom: 8px;
+		}
+
+		.radiodiv, .checkboxdiv {
+			position: relative;
+			display: inline-block;
+			margin: 2px;
+		}
+
+		#ioformdiv {
+			width: 300px;
+		}
+	</style>
+	
+</head>
+<body>
+	<div id="ioformdiv">
+		<form id="ioform">
+			<label for="tech">Technician:</label>
+			<input type="text" id="tech" name="tech" />
+			<label for="user">User:</label>
+			<input type="text" id="user" name="user" />
+			<label for="inc">Ticket:</label>
+			<input type="text" id="inc" name="inc" />
+			<div id="indiv" class="radiodiv">
+				<label for="in">Dropping Off?</label>
+				<input type="radio" id="in" name="inorout" value="1" checked />
+			</div>
+			<div id="outdiv" class="radiodiv">
+				<label for="out">Picking Up?</label>
+				<input type="radio" id="out" name="inorout" value="0" />
+			</div>
+			<div id="passwordsdiv" class="checkboxdiv">
+				<label for="passwords">Need passwords?</label>
+				<input type="checkbox" id="passwords" name="passwords" value="yes" />
+			</div>
+			<button id="iosubmit" name="iosubmit">Post</button>
+		</form>
+	</div>
+	<script src="popup.js"></script>
+</body>
+</html>
