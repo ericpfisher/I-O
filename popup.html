@@ -17,7 +17,7 @@
 		}
 
 		input[type="text"] {
-			width: 90%;
+			width: 96%;
 			margin-bottom: 8px;
 		}
 
@@ -25,6 +25,10 @@
 			position: relative;
 			display: inline-block;
 			margin: 2px;
+		}
+
+		#notes {
+			width: 90%;
 		}
 
 		#ioformdiv {
@@ -37,7 +41,7 @@
 	<div id="ioformdiv">
 		<form id="ioform">
 			<label for="tech">Technician:</label>
-			<input type="text" id="tech" name="tech" />
+			<input type="text" id="tech" name="tech" disabled="disabled" />
 			<label for="user">User:</label>
 			<input type="text" id="user" name="user" />
 			<label for="inc">Ticket:</label>
@@ -52,8 +56,10 @@
 			</div>
 			<div id="passwordsdiv" class="checkboxdiv">
 				<label for="passwords">Need passwords?</label>
-				<input type="checkbox" id="passwords" name="passwords" value="yes" />
+				<input type="checkbox" id="passwords" name="passwords" value="1" />
 			</div>
+			<label for="notes">Notes:</label>
+			<textarea id="notes"></textarea>
 			<button id="iosubmit" name="iosubmit">Post</button>
 		</form>
 	</div>
